@@ -1,0 +1,55 @@
+{
+    "openapi":"3.0.2",
+    "info": {
+      "title":"Belajar Latihan Membuat Restful Api",
+      "version":"1.0"
+    },
+    "servers": [
+      {"url":"http://localhost:4000/api"}
+    ],
+    "paths": {
+        "/buku" :{
+            "get" :{
+                "tags": ["Buku API"],
+                "summary": "Buku API",
+                "description": "Buku API",
+                "responses": {
+                    "200" :{
+                        "description": "Sukse GET ALL",
+                        "content": {
+                            "aplication/json":{
+                                "schema" :{
+                                    "type": "object",
+                                    "properties": {
+                                        "code ":{
+                                            "type": "number"
+                                        },
+                                        "status" :{
+                                            "type": "string"
+                                        },
+                                        "data" :{
+                                            "type": "array",
+                                            "items":{
+                                                "schema" :{
+                                                    "type" :"object",
+                                                    "properties" :{
+                                                        "id" :{
+                                                            "type" : "number"
+                                                        },
+                                                        
+                                                    }
+                                                }
+
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+  }

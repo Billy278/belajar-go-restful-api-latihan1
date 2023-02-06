@@ -1,0 +1,40 @@
+### get all buku
+
+GET http://localhost:4000/api/buku
+Accept: "application/json"
+KEY: RAHASIA
+
+#### find Id
+GET http://localhost:4000/api/buku/3
+Accept: application/json
+KEY: RAHASIA
+
+### Create
+POST  http://localhost:4000/api/buku
+Accept: "application/json"
+Content-Type: "application/json"
+KEY: RAHASIA
+
+{
+    "judul" :"",
+    "penulis":"Bima",
+    "penerbit" :"erlangga",
+    "tahun" :2022
+}
+### update
+PUT http://localhost:4000/api/buku/6
+Accept: "application/json"
+Content-Type: "application/json"
+KEY: RAHASIA
+
+{
+    "judul" :"How tobe Influencer",
+    "penulis":"Ginz",
+    "penerbit" :"BARETA",
+    "tahun" :2022
+}
+###
+DELETE  http://localhost:4000/api/buku/3
+Accept: "application/json"
+KEY: RAHASIA
+
